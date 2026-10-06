@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply border-slate-200; }
+  body { @apply m-0 min-w-[320px] bg-slate-50 font-sans text-slate-900 antialiased; }
+  button, input, select { font: inherit; }
+  button { @apply transition duration-150; }
+}
+
+@layer components {
+  .panel { @apply rounded-xl border border-slate-200 bg-white shadow-panel; }
+  .page-title { @apply text-2xl font-semibold tracking-[-0.03em] text-slate-900 sm:text-3xl; }
+  .subtle { @apply text-sm text-slate-500; }
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-100 disabled:cursor-not-allowed disabled:opacity-60; }
+  .btn-secondary { @apply inline-flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:border-slate-300 hover:bg-slate-50 focus:outline-none focus:ring-4 focus:ring-slate-100; }
+  .label { @apply mb-1.5 block text-sm font-medium text-slate-700; }
+  .control { @apply w-full rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-sm text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-blue-500 focus:ring-4 focus:ring-blue-50; }
+}
+
+.news-serif { font-family: 'Newsreader', Georgia, serif; }
+.thin-scrollbar::-webkit-scrollbar { width: 5px; }
+.thin-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 99px; }
