@@ -1,4 +1,4 @@
-# NewsGPT — Day 1
+# NewsGPT 
 
 NewsGPT is an AI-powered personalized technology news briefing platform. It helps users discover relevant technology news, save articles, select interests, and preview a personalized email digest.
 
